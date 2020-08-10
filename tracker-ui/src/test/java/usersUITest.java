@@ -9,5 +9,6 @@ public class usersUITest {
         usersUI UI = new usersUI();
         UI.openSettings();
         assertTrue(UI.sendCoordinate().contains("Russian Federation"));
+        assertTrue(UI.toJson().contains("Russian Federation"));
     }
 }
